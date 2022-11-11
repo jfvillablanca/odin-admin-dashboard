@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  border: 1px solid palegoldenrod;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  height: 100vh;
+}
+
+/******** Layouting and Sizing *******/
+
+body{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /*temporary*/
+  grid-template-rows: 1fr 1fr 1fr; /*temporary*/
+  grid-template-areas: "leftsidebar topheader    topheader"
+                       "leftsidebar bottomheader bottomheader"
+                       "leftsidebar cards        rightsidebar";
+}
+
+.topheader {
+  grid-area: topheader;
+}
+
+.bottomheader {
+  grid-area: bottomheader;
+} 
+
+.leftsidebar {
+  grid-area: leftsidebar;
+}
+
+.rightsidebar {
+  grid-area: rightsidebar;
+}
+
+.cards {
+  grid-area: cards;
+}
+
+
