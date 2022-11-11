@@ -9,6 +9,8 @@
   height: 100vh;
 
   font-size: 62.5%;
+  --primary-avatar-size: 10rem;
+  --secondary-avatar-size: 7rem;
 }
 
 /******** Layouting and Sizing *******/
@@ -18,39 +20,18 @@ body{
 
   display: grid;
   grid-template-columns: 1fr 4fr 1fr; /*temporary*/
-  grid-template-rows: 7rem 10rem 1fr; /*temporary*/
+  grid-template-rows: 7rem var(--primary-avatar-size) 1fr; /*temporary*/
   grid-template-areas: "leftsidebar topheader    topheader"
                        "leftsidebar bottomheader bottomheader"
                        "leftsidebar cards        rightsidebar";
 }
 
+/** topheader **/
 .topheader {
   grid-area: topheader;
   
   display: flex;
   align-items: center;
-}
-
-.bottomheader {
-  grid-area: bottomheader;
-
-  display: grid;
-  grid-template-columns: 10rem 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "useravatar greetings buttons"
-                       "useravatar username  buttons"
-} 
-
-.leftsidebar {
-  grid-area: leftsidebar;
-}
-
-.rightsidebar {
-  grid-area: rightsidebar;
-}
-
-.cards {
-  grid-area: cards;
 }
 
 .topheader > .searchbar {
@@ -63,19 +44,49 @@ body{
   display: flex;
 }
 
-.bottomheader > .user {
-  position: relative;
-}
-.bottomheader > .user > .user-avatar {
+/** bottomheader **/
+.bottomheader {
+  grid-area: bottomheader;
+
+  display: grid;
+  grid-template-columns: var(--primary-avatar-size) 1fr 1fr 2fr;
+  /* grid-template-rows: 1fr; */
+  grid-template-areas: "useravatar greetings greetings  buttons"
+                       "useravatar username  userhandle buttons";
+} 
+
+.bottomheader > .user-avatar {
   grid-area: useravatar;
 }
-
-.bottomheader > .user > .user-name {
-  position: absolute;
-  grid-area: username;
-}
-  /* grid-area: 2 / 2 / 3 / 3; */
 
 .bottomheader > p {
   grid-area: greetings;
 }
+
+.bottomheader:lastchild {
+ grid-area: buttons;
+}
+
+.bottomheader > .user-name {
+  grid-area: username;
+}
+
+.bottomheader > .user-handle {
+  grid-area: userhandle;
+}
+
+/** leftsidebar **/
+.leftsidebar {
+  grid-area: leftsidebar;
+}
+
+/** rightsidebar **/
+.rightsidebar {
+  grid-area: rightsidebar;
+}
+
+/** cards **/
+.cards {
+  grid-area: cards;
+}
+
