@@ -138,3 +138,42 @@ body {
   grid-template-columns: 5fr repeat(3, 1fr);
   justify-items: end;
 }
+
+
+/******** Aesthetics and Style *******/
+/* .body {} */
+
+.projectcards {
+  margin: 3rem;
+}
+
+/** Fonts **/
+.leftsidebar .dashboardlink-name {
+  font-size: 3rem;
+}
+
+.bottomheader .user-handle,
+.bottomheader .user-name {
+  font-size: 2.6rem;
+}
+
+.leftsidebar .links h2 {
+  font-size: 2.4rem;
+}
+
+.rightsidebar h2,
+.projectcards h1 {
+  font-size: 2rem;
+}
+
+.announcements-div h3,
+.cards h2 {
+  font-size: 1.8rem;
+}
+
+.bottomheader p,
+.announcements-div p,
+.connects > .user-handle, 
+.connects > .user-name {
+  font-size: 1.4rem;
+}
