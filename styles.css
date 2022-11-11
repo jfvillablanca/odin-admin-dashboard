@@ -7,14 +7,18 @@
 
 :root {
   height: 100vh;
+
+  font-size: 62.5%;
 }
 
 /******** Layouting and Sizing *******/
 
 body{
+  font-size: 1.6rem;
+
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /*temporary*/
-  grid-template-rows: 1fr 1fr 1fr; /*temporary*/
+  grid-template-columns: 1fr 4fr 1fr; /*temporary*/
+  grid-template-rows: 7rem 10rem 1fr; /*temporary*/
   grid-template-areas: "leftsidebar topheader    topheader"
                        "leftsidebar bottomheader bottomheader"
                        "leftsidebar cards        rightsidebar";
@@ -22,10 +26,19 @@ body{
 
 .topheader {
   grid-area: topheader;
+  
+  display: flex;
+  align-items: center;
 }
 
 .bottomheader {
   grid-area: bottomheader;
+
+  display: grid;
+  grid-template-columns: 10rem 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "useravatar greetings buttons"
+                       "useravatar username  buttons"
 } 
 
 .leftsidebar {
@@ -40,4 +53,29 @@ body{
   grid-area: cards;
 }
 
+.topheader > .searchbar {
+  flex: 2;
+}
 
+.topheader > .user {
+  flex: 1;
+
+  display: flex;
+}
+
+.bottomheader > .user {
+  position: relative;
+}
+.bottomheader > .user > .user-avatar {
+  grid-area: useravatar;
+}
+
+.bottomheader > .user > .user-name {
+  position: absolute;
+  grid-area: username;
+}
+  /* grid-area: 2 / 2 / 3 / 3; */
+
+.bottomheader > p {
+  grid-area: greetings;
+}
