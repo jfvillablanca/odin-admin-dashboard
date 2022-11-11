@@ -18,21 +18,22 @@
 
 /** body **/
 
-body{
+body {
   font-size: 1.6rem;
 
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr; 
-  grid-template-rows: var(--height-top-header) var(--size-primary-avatar) 1fr; 
-  grid-template-areas: "leftsidebar topheader    topheader"
-                       "leftsidebar bottomheader bottomheader"
-                       "leftsidebar cards        rightsidebar";
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: var(--height-top-header) var(--size-primary-avatar) 1fr;
+  grid-template-areas:
+    "leftsidebar topheader    topheader"
+    "leftsidebar bottomheader bottomheader"
+    "leftsidebar cards        rightsidebar";
 }
 
 /** topheader **/
 .topheader {
   grid-area: topheader;
-  
+
   display: flex;
   align-items: center;
 }
@@ -54,9 +55,10 @@ body{
   display: grid;
   grid-template-columns: var(--size-primary-avatar) 1fr 1fr 2fr;
   /* grid-template-rows: 1fr; */
-  grid-template-areas: "useravatar greetings greetings  buttons"
-                       "useravatar username  userhandle buttons";
-} 
+  grid-template-areas:
+    "useravatar greetings greetings  buttons"
+    "useravatar username  userhandle buttons";
+}
 
 .bottomheader > .user-avatar {
   grid-area: useravatar;
@@ -67,7 +69,7 @@ body{
 }
 
 .bottomheader:lastchild {
- grid-area: buttons;
+  grid-area: buttons;
 }
 
 .bottomheader > .user-name {
@@ -91,12 +93,31 @@ body{
 }
 
 /** rightsidebar **/
+
 .rightsidebar {
   grid-area: rightsidebar;
+}
+
+.rightsidebar > .connects-container > .connects {
+  display: grid;
+  grid-template: repeat(2, calc(var(--size-secondary-avatar) / 2)) / var(--size-secondary-avatar) auto;
+  grid-template-areas: "useravatar userhandle"
+                       "useravatar username";
+}
+
+.connects > .user-avatar {
+  grid-area: useravatar;
+}
+
+.connects > .user-handle {
+  grid-area: userhandle;
+}
+
+.connects > .user-name {
+  grid-area: username;
 }
 
 /** cards **/
 .cards {
   grid-area: cards;
 }
-
