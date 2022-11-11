@@ -12,6 +12,9 @@
   --height-top-header: 7rem;
   --size-primary-avatar: 10rem;
   --size-secondary-avatar: 7rem;
+  --size-main-icon: 7rem;
+  --size-sidebar-icon: 5rem;
+  --size-card-icon: 3rem;
 }
 
 /******** Layouting and Sizing *******/
@@ -27,7 +30,7 @@ body {
   grid-template-areas:
     "leftsidebar topheader    topheader"
     "leftsidebar bottomheader bottomheader"
-    "leftsidebar cards        rightsidebar";
+    "leftsidebar projectcards rightsidebar";
 }
 
 /** topheader **/
@@ -117,7 +120,21 @@ body {
   grid-area: username;
 }
 
-/** cards **/
-.cards {
-  grid-area: cards;
+/** projectcards **/
+.projectcards {
+  grid-area: projectcards;
+}
+
+.projectcards > .cards {
+  margin: 0.2rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem,1fr));
+  gap: 0.2rem;
+}
+
+.card-content > div {
+  display: grid;
+  grid-template-columns: 5fr repeat(3, 1fr);
+  justify-items: end;
 }
