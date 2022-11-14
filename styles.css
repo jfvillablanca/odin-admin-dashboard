@@ -47,6 +47,7 @@
 /** body **/
 
 body {
+  height: 100vh;
   font-size: 1.6rem;
 
   display: grid;
