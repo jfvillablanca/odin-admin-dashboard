@@ -205,6 +205,19 @@ body {
 }
 
 .card,
+.card-content {
+  padding: 0.9rem;
+}
+
+.card-content > div {
+  margin-top: 2.5rem;
+}
+
+.card-content > p {
+  margin-top: 1rem;
+}
+
+.card,
 .card-content,
 .connects-container,
 .announcements {
