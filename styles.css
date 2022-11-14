@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  border: 1px solid palegoldenrod;
+  /* border: 1px solid palegoldenrod; */
   padding: 0;
   margin: 0;
 }
@@ -61,7 +61,7 @@ body {
   font-size: 1.6rem;
 
   display: grid;
-  grid-template-columns: 1.5fr 5fr 2fr;
+  grid-template-columns: 2fr 5fr 2fr;
   grid-template-rows: var(--height-top-header) var(--size-primary-avatar) 1fr;
   grid-template-areas:
     "leftsidebar topheader    topheader"
@@ -216,32 +216,6 @@ body {
 }
 /******** Aesthetics and Style *******/
 
-/** Colors **/
-body {
-  background-color: rgb(var(--color-indigo-900));
-}
-
-.bottomheader > :last-child > div {
-  background-color: rgb(var(--color-yellow-400));
-}
-
-.leftsidebar {
-  background-color: rgb(var(--color-yellow-400));
-}
-
-.topheader,
-.bottomheader,
-.announcements,
-.connects-container,
-.card-content {
-  background-color: rgb(var(--color-indigo-50));
-}
-
-.rightsidebar h2,
-.projectcards h1 {
-  color: rgb(var(--color-indigo-100));
-}
-
 /** Box Model Tweaks **/
 
 .topheader .searchbar img {
@@ -314,6 +288,32 @@ body {
 .connects-container,
 .announcements {
   border-radius: 0.3rem;
+}
+
+/** Colors **/
+body {
+  background-color: rgb(var(--color-indigo-900));
+}
+
+.bottomheader > :last-child > div {
+  background-color: rgb(var(--color-yellow-400));
+}
+
+.leftsidebar {
+  background-color: rgb(var(--color-yellow-400));
+}
+
+.topheader,
+.bottomheader,
+.announcements,
+.connects-container,
+.card-content {
+  background-color: rgb(var(--color-indigo-50));
+}
+
+.rightsidebar h2,
+.projectcards h1 {
+  color: rgb(var(--color-indigo-100));
 }
 
 /** Fonts **/
