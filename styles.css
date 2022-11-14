@@ -212,6 +212,10 @@ body {
   margin-left: 1.2rem;
 }
 
+.leftsidebar ul > div {
+  margin-bottom: 2rem;
+}
+
 .rightsidebar {
   margin-right: 2rem;
 }
@@ -260,7 +264,7 @@ body {
 }
 
 .leftsidebar .links h2 {
-  font-size: 2.4rem;
+  font-size: 2.1rem;
 }
 
 .rightsidebar h2,
