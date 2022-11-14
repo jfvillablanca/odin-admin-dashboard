@@ -175,8 +175,13 @@ body {
   background-color: rgb(var(--color-indigo-50));
 }
 
+/** Box Model Tweaks **/
 .projectcards {
-  margin: 3rem;
+  margin: 1.5rem;
+}
+
+.card-content {
+  margin: 0.5rem;
 }
 
 /** Fonts **/
