@@ -158,7 +158,22 @@ body {
 
 
 /******** Aesthetics and Style *******/
-/* .body {} */
+/** Colors **/
+body {
+  background-color: rgb(var(--color-indigo-900));
+}
+
+.leftsidebar {
+  background-color: rgb(var(--color-indigo-300));
+}
+
+.topheader,
+.bottomheader,
+.announcements,
+.connects,
+.card-content {
+  background-color: rgb(var(--color-indigo-50));
+}
 
 .projectcards {
   margin: 3rem;
