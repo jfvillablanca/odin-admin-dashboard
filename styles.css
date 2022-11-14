@@ -38,7 +38,7 @@ body {
   font-size: 1.6rem;
 
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-columns: 1fr 5fr 2fr;
   grid-template-rows: var(--height-top-header) var(--size-primary-avatar) 1fr;
   grid-template-areas:
     "leftsidebar topheader    topheader"
@@ -187,11 +187,19 @@ body {
 }
 
 .rightsidebar h2,
+.projectcards h1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1.4rem;
+}
+
+
+/* .rightsidebar h2, */
+/* .projectcards h1, */
 .rightsidebar .announcements,
 .rightsidebar .connects-container,
-.projectcards h1,
 .card-content {
-  margin: 0.5rem;
+  margin-left: 0.5rem;
   /* padding-left: 0.4rem; */
   padding: 1.4rem;
 }
