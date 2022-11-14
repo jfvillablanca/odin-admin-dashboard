@@ -203,6 +203,8 @@ body {
 .rightsidebar h2,
 .projectcards h1 {
   font-size: 2rem;
+
+  color: rgb(var(--color-indigo-100));
 }
 
 .announcements-div h3,
