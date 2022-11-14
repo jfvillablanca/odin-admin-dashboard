@@ -218,6 +218,18 @@ body {
 }
 
 /** Box Model Tweaks **/
+
+.topheader .searchbar img {
+  margin-left:   1rem;
+}
+.topheader .searchbar input {
+  border-radius: 3rem;
+  margin-left:   0rem;
+  margin-right:  2rem;
+  padding-left:  2rem;
+  padding-right: 2rem;
+}
+
 .projectcards {
   margin: 0.5rem;
 }
