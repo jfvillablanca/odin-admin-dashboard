@@ -166,6 +166,12 @@ body {
   width:  var(--size-small-icon);
 }
 
+.topheader .user-avatar > img,
+.connects-container .user-avatar > img {
+  height: var(--size-secondary-avatar);
+  width: var(--size-secondary-avatar);
+}
+
 /******** Aesthetics and Style *******/
 /** Colors **/
 body {
