@@ -28,6 +28,17 @@
   --color-indigo-700: 109 40 217; /*#6d28d9*/
   --color-indigo-800: 91 33 182; /*#5b21b6*/
   --color-indigo-900: 49 46 129;/* #312E81 */
+
+  --color-yellow-50:  254 252 232; /*#fefce8*/
+  --color-yellow-100: 254 249 195; /*#fef9c3*/
+  --color-yellow-200: 254 240 138; /*#fef08a*/
+  --color-yellow-300: 253 224 71; /*#fde047*/
+  --color-yellow-400: 250 204 21; /*#facc15*/
+  --color-yellow-500: 234 179 8; /*#eab308*/
+  --color-yellow-600: 202 138 4; /*#ca8a04*/
+  --color-yellow-700: 161 98 7; /*#a16207*/
+  --color-yellow-800: 133 77 14; /*#854d0e*/
+  --color-yellow-900: 113 63 18; /*#713f12*/
 }
 
 /******** Layouting *******/
