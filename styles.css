@@ -15,7 +15,7 @@
   --size-secondary-avatar: 7rem;
   --size-main-icon: 7rem;
   --size-sidebar-icon: 5rem;
-  --size-card-icon: 3rem;
+  --size-small-icon: 3rem;
   /* --color-background: #BBC5CE */
 
   --color-indigo-50: 238 242 255; /*#eef2ff*/
@@ -30,7 +30,7 @@
   --color-indigo-900: 49 46 129;/* #312E81 */
 }
 
-/******** Layouting and Sizing *******/
+/******** Layouting *******/
 
 /** body **/
 
@@ -158,6 +158,13 @@ body {
   justify-items: end;
 }
 
+/******** Sizing *******/
+.topheader .searchbar > img,
+.topheader .notificationbell > img,
+.projectcards .card-content img {
+  height: var(--size-small-icon);
+  width:  var(--size-small-icon);
+}
 
 /******** Aesthetics and Style *******/
 /** Colors **/
@@ -210,9 +217,6 @@ body {
   padding: 1.4rem;
 }
 
-
-/* .rightsidebar h2, */
-/* .projectcards h1, */
 .rightsidebar .announcements,
 .rightsidebar .connects-container,
 .card-content {
