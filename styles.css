@@ -181,6 +181,23 @@ body {
 .projectcards {
   margin: 0.5rem;
 }
+/** temp **/
+.leftsidebar * {
+  border: 1px solid palegoldenrod;
+}
+/** temp **/
+
+.leftsidebar {
+  padding-left: 1rem;
+}
+
+.leftsidebar > :nth-child(2) {
+  margin-top: 3rem;
+}
+
+.leftsidebar .links h2 {
+  margin-left: 1.2rem;
+}
 
 .rightsidebar {
   margin-right: 2rem;
