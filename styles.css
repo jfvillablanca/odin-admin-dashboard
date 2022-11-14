@@ -200,8 +200,8 @@ body {
 }
 
 .bottomheader > :last-child > div {
-  height: 3rem;
-  width: 8rem;
+  height: 3.6rem;
+  width: 9rem;
 }
 /******** Aesthetics and Style *******/
 
@@ -336,6 +336,11 @@ body {
   font-size: 1.8rem;
 }
 
+.bottomheader > :last-child > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .bottomheader p,
 .announcements-div p,
