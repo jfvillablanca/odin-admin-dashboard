@@ -183,6 +183,11 @@ body {
   width:  var(--size-small-icon);
 }
 
+.topheader .searchbar input {
+  height: var(--size-small-icon);
+  width: 100%;
+}
+
 .topheader .user-avatar > img,
 .connects-container .user-avatar > img {
   height: var(--size-secondary-avatar);
@@ -193,11 +198,20 @@ body {
   height: var(--size-primary-avatar);
   width: var(--size-primary-avatar);
 }
+
+.bottomheader > :last-child > div {
+  height: 3rem;
+  width: 8rem;
+}
 /******** Aesthetics and Style *******/
 
 /** Colors **/
 body {
   background-color: rgb(var(--color-indigo-900));
+}
+
+.bottomheader > :last-child > div {
+  background-color: rgb(var(--color-yellow-400));
 }
 
 .leftsidebar {
@@ -228,6 +242,10 @@ body {
   margin-right:  2rem;
   padding-left:  2rem;
   padding-right: 2rem;
+}
+
+.bottomheader > :last-child > div {
+  border-radius: 3rem; 
 }
 
 .projectcards {
@@ -297,6 +315,7 @@ body {
   font-size: 2.6rem;
 }
 
+
 .leftsidebar .links h2 {
   font-size: 2.1rem;
 }
@@ -311,10 +330,12 @@ body {
   font-size: 2rem;
 }
 
+.bottomheader > :last-child > div,
 .announcements-div h3,
 .cards h2 {
   font-size: 1.8rem;
 }
+
 
 .bottomheader p,
 .announcements-div p,
