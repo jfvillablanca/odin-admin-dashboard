@@ -172,7 +172,7 @@ body {
 .topheader,
 .bottomheader,
 .announcements,
-.connects,
+.connects-container,
 .card-content {
   background-color: rgb(var(--color-indigo-50));
 }
