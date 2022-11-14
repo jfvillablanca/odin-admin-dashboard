@@ -189,13 +189,14 @@ body {
   width: var(--size-primary-avatar);
 }
 /******** Aesthetics and Style *******/
+
 /** Colors **/
 body {
   background-color: rgb(var(--color-indigo-900));
 }
 
 .leftsidebar {
-  background-color: rgb(var(--color-indigo-300));
+  background-color: rgb(var(--color-yellow-400));
 }
 
 .topheader,
@@ -204,6 +205,11 @@ body {
 .connects-container,
 .card-content {
   background-color: rgb(var(--color-indigo-50));
+}
+
+.rightsidebar h2,
+.projectcards h1 {
+  color: rgb(var(--color-indigo-100));
 }
 
 /** Box Model Tweaks **/
@@ -278,11 +284,14 @@ body {
   font-size: 2.1rem;
 }
 
+.leftsidebar .links h2,
+.leftsidebar .dashboardlink-name {
+  color: rgb(var(--color-indigo-600));
+}
+
 .rightsidebar h2,
 .projectcards h1 {
   font-size: 2rem;
-
-  color: rgb(var(--color-indigo-100));
 }
 
 .announcements-div h3,
