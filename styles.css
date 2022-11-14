@@ -16,6 +16,17 @@
   --size-sidebar-icon: 5rem;
   --size-card-icon: 3rem;
   /* --color-background: #BBC5CE */
+
+  --color-indigo-50: 238 242 255; /*#eef2ff*/
+  --color-indigo-100: 224 231 255; /*#e0e7ff*/
+  --color-indigo-200: 199 210 254; /*#c7d2fe*/
+  --color-indigo-300: 165 180 252; /*#a5b4fc*/
+  --color-indigo-400: 167 139 250; /*#a78bfa*/
+  --color-indigo-500: 99 102 241; /*#6366f1*/
+  --color-indigo-600: 79 70 229; /*#4f46e5*/
+  --color-indigo-700: 109 40 217; /*#6d28d9*/
+  --color-indigo-800: 91 33 182; /*#5b21b6*/
+  --color-indigo-900: 49 46 129;/* #312E81 */
 }
 
 /******** Layouting and Sizing *******/
