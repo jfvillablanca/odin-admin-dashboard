@@ -15,6 +15,7 @@
   --size-main-icon: 7rem;
   --size-sidebar-icon: 5rem;
   --size-card-icon: 3rem;
+  /* --color-background: #BBC5CE */
 }
 
 /******** Layouting and Sizing *******/
@@ -71,16 +72,21 @@ body {
   grid-area: greetings;
 }
 
-.bottomheader:lastchild {
-  grid-area: buttons;
-}
-
 .bottomheader > .user-name {
   grid-area: username;
 }
 
 .bottomheader > .user-handle {
   grid-area: userhandle;
+}
+
+.bottomheader > :last-child {
+  grid-area: buttons;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
 }
 
 /** leftsidebar **/
