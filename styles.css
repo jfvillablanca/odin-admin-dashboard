@@ -10,6 +10,7 @@
 
   font-size: 62.5%;
   --height-top-header: 7rem;
+
   --size-primary-avatar: 10rem;
   --size-secondary-avatar: 7rem;
   --size-main-icon: 7rem;
@@ -60,7 +61,8 @@ body {
 .topheader > .user {
   flex: 1;
 
-  display: flex;
+  display: grid;
+  grid-template-columns: var(--size-secondary-avatar) 1fr;
 }
 
 /** bottomheader **/
