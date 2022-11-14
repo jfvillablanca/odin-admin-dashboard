@@ -68,6 +68,9 @@ body {
 
 .topheader > .searchbar {
   flex: 2;
+  
+  display: flex;
+  align-items: center;
 }
 
 .topheader > .user {
@@ -75,6 +78,7 @@ body {
 
   display: grid;
   grid-template-columns: var(--size-secondary-avatar) 1fr;
+  align-items: center;
 }
 
 /** bottomheader **/
