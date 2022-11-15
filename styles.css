@@ -9,7 +9,8 @@
   height: 100vh;
 
   font-size: 62.5%;
-  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --height-top-header: 7rem;
 
   --size-primary-avatar: 10rem;
@@ -19,38 +20,38 @@
   --size-small-icon: 3rem;
   --size-card-gap: 0.9rem;
 
-  --color-neutral-50:  250 250 250; /*#fafafa*/
+  --color-neutral-50: 250 250 250; /*#fafafa*/
   --color-neutral-100: 245 245 244; /*#f5f5f4*/
   --color-neutral-200: 229 229 229; /*#e5e5e5*/
   --color-neutral-300: 212 212 212; /*#d4d4d4*/
   --color-neutral-400: 163 163 163; /*#a3a3a3*/
   --color-neutral-500: 115 115 115; /*#737373*/
-  --color-neutral-600: 82 82 82;    /*#525252*/
-  --color-neutral-700: 64 64 64;    /*#404040*/
-  --color-neutral-800: 38 38 38;    /*#262626*/
-  --color-neutral-900: 23 23 23;    /*#171717*/
+  --color-neutral-600: 82 82 82; /*#525252*/
+  --color-neutral-700: 64 64 64; /*#404040*/
+  --color-neutral-800: 38 38 38; /*#262626*/
+  --color-neutral-900: 23 23 23; /*#171717*/
 
-  --color-indigo-50:   238 242 255; /*#eef2ff*/
-  --color-indigo-100:  224 231 255; /*#e0e7ff*/
-  --color-indigo-200:  199 210 254; /*#c7d2fe*/
-  --color-indigo-300:  165 180 252; /*#a5b4fc*/
-  --color-indigo-400:  167 139 250; /*#a78bfa*/
-  --color-indigo-500:  99 102 241;  /*#6366f1*/
-  --color-indigo-600:  79 70 229;   /*#4f46e5*/
-  --color-indigo-700:  109 40 217;  /*#6d28d9*/
-  --color-indigo-800:  91 33 182;   /*#5b21b6*/
-  --color-indigo-900:  49 46 129;   /*#312E81 */
+  --color-indigo-50: 238 242 255; /*#eef2ff*/
+  --color-indigo-100: 224 231 255; /*#e0e7ff*/
+  --color-indigo-200: 199 210 254; /*#c7d2fe*/
+  --color-indigo-300: 165 180 252; /*#a5b4fc*/
+  --color-indigo-400: 167 139 250; /*#a78bfa*/
+  --color-indigo-500: 99 102 241; /*#6366f1*/
+  --color-indigo-600: 79 70 229; /*#4f46e5*/
+  --color-indigo-700: 109 40 217; /*#6d28d9*/
+  --color-indigo-800: 91 33 182; /*#5b21b6*/
+  --color-indigo-900: 49 46 129; /*#312E81 */
 
-  --color-yellow-50:   254 252 232; /*#fefce8*/
-  --color-yellow-100:  254 249 195; /*#fef9c3*/
-  --color-yellow-200:  254 240 138; /*#fef08a*/
-  --color-yellow-300:  253 224 71;  /*#fde047*/
-  --color-yellow-400:  250 204 21;  /*#facc15*/
-  --color-yellow-500:  234 179 8;   /*#eab308*/
-  --color-yellow-600:  202 138 4;   /*#ca8a04*/
-  --color-yellow-700:  161 98 7;    /*#a16207*/
-  --color-yellow-800:  133 77 14;   /*#854d0e*/
-  --color-yellow-900:  113 63 18;   /*#713f12*/
+  --color-yellow-50: 254 252 232; /*#fefce8*/
+  --color-yellow-100: 254 249 195; /*#fef9c3*/
+  --color-yellow-200: 254 240 138; /*#fef08a*/
+  --color-yellow-300: 253 224 71; /*#fde047*/
+  --color-yellow-400: 250 204 21; /*#facc15*/
+  --color-yellow-500: 234 179 8; /*#eab308*/
+  --color-yellow-600: 202 138 4; /*#ca8a04*/
+  --color-yellow-700: 161 98 7; /*#a16207*/
+  --color-yellow-800: 133 77 14; /*#854d0e*/
+  --color-yellow-900: 113 63 18; /*#713f12*/
 }
 
 /******** Layouting *******/
@@ -75,7 +76,10 @@ body {
   grid-area: topheader;
 
   display: grid;
-  grid-template-columns: clamp(30rem, 70%, 60vw) var(--size-small-icon) minmax(30rem, 1fr);
+  grid-template-columns: clamp(30rem, 70%, 60vw) var(--size-small-icon) minmax(
+      30rem,
+      1fr
+    );
   align-items: center;
 }
 
@@ -97,7 +101,10 @@ body {
   grid-area: bottomheader;
 
   display: grid;
-  grid-template-columns: var(--size-primary-avatar) max-content max-content 1.5fr minmax(calc(var(--size-small-icon) + 30rem), 1fr);
+  grid-template-columns: var(--size-primary-avatar) max-content max-content 1.5fr minmax(
+      calc(var(--size-small-icon) + 30rem),
+      1fr
+    );
   grid-template-areas:
     "useravatar greetings greetings  . buttons"
     "useravatar username  userhandle . buttons";
@@ -155,9 +162,12 @@ body {
 
 .rightsidebar > .connects-container > .connects {
   display: grid;
-  grid-template: repeat(2, calc(var(--size-secondary-avatar) / 2)) / var(--size-secondary-avatar) auto;
-  grid-template-areas: "useravatar userhandle"
-                       "useravatar username";
+  grid-template: repeat(2, calc(var(--size-secondary-avatar) / 2)) / var(
+      --size-secondary-avatar
+    ) auto;
+  grid-template-areas:
+    "useravatar userhandle"
+    "useravatar username";
 }
 
 .connects > .user-avatar {
@@ -179,7 +189,7 @@ body {
 
 .projectcards > .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(30rem,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   gap: var(--size-card-gap);
 }
 
@@ -195,7 +205,7 @@ body {
 .leftsidebar .links img,
 .projectcards .card-content img {
   height: var(--size-small-icon);
-  width:  var(--size-small-icon);
+  width: var(--size-small-icon);
 }
 
 .topheader .searchbar input {
@@ -239,12 +249,11 @@ body {
   margin-right: 1rem;
 }
 
-
 .topheader .searchbar input {
   border-radius: 3rem;
-  margin-left:   0rem;
-  margin-right:  2rem;
-  padding-left:  2rem;
+  margin-left: 0rem;
+  margin-right: 2rem;
+  padding-left: 2rem;
   padding-right: 2rem;
 }
 
@@ -271,7 +280,7 @@ body {
 }
 
 .bottomheader > :last-child > div {
-  border-radius: 3rem; 
+  border-radius: 3rem;
 }
 
 .projectcards {
@@ -306,9 +315,19 @@ body {
 
 .rightsidebar .announcements-div,
 .rightsidebar .connects {
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
+.rightsidebar .announcements-div:first-child,
+.rightsidebar .connects:first-child {
+  margin-top: 0rem;
+}
+
+.rightsidebar .announcements-div:last-child,
+.rightsidebar .connects:last-child {
+  margin-bottom: 0rem;
+}
 
 .projectcards h1 {
   padding-left: var(--size-card-gap);
@@ -373,6 +392,15 @@ body {
   color: rgb(var(--color-indigo-100));
 }
 
+.rightsidebar hr {
+  display: flex;
+}
+/* .rightsidebar .announcements-div:not(.announcements-div:last-child) { /* non-semantic hr */ */
+/*   content: " "; */
+/*   display: block; */
+/*   border-bottom: 1px solid #000; */
+/* } */
+
 /** Fonts **/
 .leftsidebar .dashboardlink-name {
   font-size: 3rem;
@@ -418,7 +446,7 @@ body {
 }
 
 .announcements-div p,
-.connects > .user-handle, 
+.connects > .user-handle,
 .connects > .user-name {
   font-size: 1.4rem;
 }
