@@ -363,7 +363,7 @@ body {
 .card-content,
 .connects-container,
 .announcements {
-  border-radius: 0.3rem;
+  border-radius: 1rem;
 }
 
 /** Colors **/
