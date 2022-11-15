@@ -300,7 +300,7 @@ body {
 }
 
 .rightsidebar {
-  margin-right: calc(var(--size-card-gap) * 2);
+  margin-right: 3rem;
 }
 
 .rightsidebar h2,
