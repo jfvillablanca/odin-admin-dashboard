@@ -178,8 +178,6 @@ body {
 }
 
 .projectcards > .cards {
-  margin: 0.2rem;
-
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30rem,1fr));
   gap: var(--size-card-gap);
@@ -277,7 +275,8 @@ body {
 }
 
 .projectcards {
-  margin: 0.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .leftsidebar {
@@ -314,9 +313,11 @@ body {
 .projectcards h1 {
   padding-left: var(--size-card-gap);
 }
+
 .card,
 .card-content {
   padding: 0.9rem;
+  padding-top: 0rem;
 }
 
 .card-content > div {
