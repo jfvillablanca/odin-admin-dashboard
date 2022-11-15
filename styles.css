@@ -320,6 +320,10 @@ body {
   background-color: rgb(var(--color-indigo-900));
 }
 
+.topheader .searchbar input {
+  border: none;
+}
+
 .bottomheader > :last-child > div {
   background-color: rgb(var(--color-yellow-400));
 }
