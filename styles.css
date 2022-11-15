@@ -74,15 +74,12 @@ body {
 .topheader {
   grid-area: topheader;
 
-  /* display: flex; */
   display: grid;
-  grid-template-columns: clamp(30rem, 70%, 60vw) calc(var(--size-small-icon) + 3rem) 30rem;
+  grid-template-columns: clamp(30rem, 70%, 60vw) var(--size-small-icon) minmax(30rem, 1fr);
   align-items: center;
 }
 
 .topheader > .searchbar {
-  /* flex: 2; */
-  /*  */
   display: flex;
   align-items: center;
 }
@@ -100,11 +97,10 @@ body {
   grid-area: bottomheader;
 
   display: grid;
-  grid-template-columns: var(--size-primary-avatar) 1fr 1fr 2fr;
-  /* grid-template-rows: 1fr; */
+  grid-template-columns: var(--size-primary-avatar) max-content max-content 1.5fr minmax(calc(var(--size-small-icon) + 30rem), 1fr);
   grid-template-areas:
-    "useravatar greetings greetings  buttons"
-    "useravatar username  userhandle buttons";
+    "useravatar greetings greetings  . buttons"
+    "useravatar username  userhandle . buttons";
 }
 
 .bottomheader > .user-avatar {
@@ -244,12 +240,17 @@ body {
   margin-right: 1rem;
 }
 
+
 .topheader .searchbar input {
   border-radius: 3rem;
   margin-left:   0rem;
   margin-right:  2rem;
   padding-left:  2rem;
   padding-right: 2rem;
+}
+
+.topheader .user {
+  margin-left: 3rem;
 }
 
 .leftsidebar > .dashboardlink {
