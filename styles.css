@@ -61,7 +61,7 @@ body {
   font-size: 1.6rem;
 
   display: grid;
-  grid-template-columns: 2fr 5fr 2fr;
+  grid-template-columns: 1.5.5.5.5.5.5.5fr 5fr 2fr;
   grid-template-rows: var(--height-top-header) var(--size-primary-avatar) 1fr;
   grid-template-areas:
     "leftsidebar topheader    topheader"
@@ -135,19 +135,18 @@ body {
 
   display: grid;
   grid-template-rows: var(--height-top-header) 1fr 1fr;
-  /* grid-template-columns: var(--size-main-icon) 1fr; */
 }
-
-/* .leftsidebar div { */
-/*   display: flex; */
-/* } */
 
 .leftsidebar > .dashboardlink,
 .leftsidebar .link {
   display: grid;
   grid-template-columns: var(--height-top-header) 1fr;
+  align-items: center;
 }
 
+.leftsidebar .link > img {
+  justify-self: center;
+}
 /** rightsidebar **/
 
 .rightsidebar {
@@ -221,6 +220,14 @@ body {
   height: 3.6rem;
   width: 9rem;
 }
+
+.leftsidebar > .dashboardlink > img {
+  height: var(--size-main-icon);
+}
+
+.leftsidebar .links img {
+  height: var(--size-sidebar-icon);
+}
 /******** Aesthetics and Style *******/
 
 /** Box Model Tweaks **/
@@ -234,6 +241,15 @@ body {
   margin-right:  2rem;
   padding-left:  2rem;
   padding-right: 2rem;
+}
+
+.leftsidebar > .dashboardlink {
+  margin-top: 1rem;
+}
+
+.leftsidebar > .dashboardlink > h1,
+.leftsidebar .link > h2 {
+  margin-left: 1rem;
 }
 
 .bottomheader > :last-child > div {
@@ -255,10 +271,6 @@ body {
 /* .leftsidebar .links h2 { */
 /*   /* margin-left: 1.2rem; */ */
 /* } */
-
-.leftsidebar ul > div {
-  margin-bottom: 2rem;
-}
 
 .rightsidebar {
   margin-right: 2rem;
@@ -338,10 +350,10 @@ body {
   font-size: 2.1rem;
 }
 
-.leftsidebar .links h2,
-.leftsidebar .dashboardlink-name {
-  color: rgb(var(--color-indigo-600));
-}
+/* .leftsidebar .links h2, */
+/* .leftsidebar .dashboardlink-name { */
+/*   color: rgb(var(--color-indigo-600)); */
+/* } */
 
 .rightsidebar h2,
 .projectcards h1 {
