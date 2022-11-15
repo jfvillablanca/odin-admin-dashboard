@@ -286,10 +286,10 @@ body {
   padding: 1.4rem;
 }
 
-/* .rightsidebars .announcements-div, */
-/* .rightsidebars .connects { */
-/*   margin-bottom: 5rem; */
-/* } */
+.rightsidebar .announcements-div,
+.rightsidebar .connects {
+  margin-bottom: 2rem;
+}
 
 
 .projectcards h1 {
