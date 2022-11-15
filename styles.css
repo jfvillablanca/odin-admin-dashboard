@@ -322,7 +322,12 @@ body {
 
 .topheader .searchbar input {
   border: none;
+  background-color: rgb(var(--color-neutral-300));
 }
+
+/* .topheader .searchbar input:focus { */
+/*   background-color: rgb(var(--color-neutral-100)); */
+/* } */
 
 .bottomheader > :last-child > div {
   background-color: rgb(var(--color-yellow-400));
