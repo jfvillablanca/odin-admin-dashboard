@@ -176,6 +176,8 @@ body {
 
 .connects > .user-handle {
   grid-area: userhandle;
+
+  align-self: end;
 }
 
 .connects > .user-name {
@@ -330,6 +332,11 @@ body {
   margin-bottom: 0rem;
 }
 
+.rightsidebar .connects > .user-handle,
+.rightsidebar .connects > .user-name {
+  margin-left: 1.4rem;
+}
+
 .projectcards h1 {
   padding-left: var(--size-card-gap);
 }
@@ -393,16 +400,9 @@ body {
   color: rgb(var(--color-indigo-100));
 }
 
-.rightsidebar hr {
-  display: flex;
-}
-/* .rightsidebar .announcements-div:not(.announcements-div:last-child) { /* non-semantic hr */ */
-/*   content: " "; */
-/*   display: block; */
-/*   border-bottom: 1px solid #000; */
-/* } */
 
 /** Fonts **/
+
 .leftsidebar .dashboardlink-name {
   font-size: 3rem;
 }
@@ -412,7 +412,8 @@ body {
   font-size: 2.6rem;
 }
 
-.bottomheader .user-handle {
+.bottomheader .user-handle,
+.rightsidebar .user-handle {
   font-weight: 600;
 }
 
@@ -449,5 +450,5 @@ body {
 .announcements-div p,
 .connects > .user-handle,
 .connects > .user-name {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
