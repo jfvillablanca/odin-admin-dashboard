@@ -109,6 +109,7 @@ body {
 
 .bottomheader > p {
   grid-area: greetings;
+  align-self: end;
 }
 
 .bottomheader > .user-name {
@@ -262,6 +263,15 @@ body {
   margin-left: 1rem;
 }
 
+.bottomheader > p {
+  margin-bottom: 1rem;
+}
+.bottomheader > p,
+.bottomheader > .user-name {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .bottomheader > :last-child > div {
   border-radius: 3rem; 
 }
@@ -369,6 +379,13 @@ body {
   font-size: 2.6rem;
 }
 
+.bottomheader .user-handle {
+  font-weight: 600;
+}
+
+.bottomheader > p {
+  font-size: 2.1rem;
+}
 
 .leftsidebar .links h2 {
   font-size: 2.1rem;
@@ -396,7 +413,6 @@ body {
   justify-content: center;
 }
 
-.bottomheader p,
 .announcements-div p,
 .connects > .user-handle, 
 .connects > .user-name {
