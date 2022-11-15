@@ -233,9 +233,15 @@ body {
 
 /** Box Model Tweaks **/
 
-.topheader .searchbar img {
-  margin-left:   1rem;
+.topheader,
+.bottomheader {
+  padding-left: 2rem;
 }
+
+.topheader .searchbar img {
+  margin-right: 1rem;
+}
+
 .topheader .searchbar input {
   border-radius: 3rem;
   margin-left:   0rem;
