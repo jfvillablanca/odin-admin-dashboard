@@ -63,7 +63,8 @@ body {
   font-size: 1.6rem;
 
   display: grid;
-  grid-template-columns: 1.3fr 5fr 2fr;
+  /* grid-template-columns: 1.3fr 5fr 2fr; */
+  grid-template-columns:  max-content 5fr 2fr;
   grid-template-rows: var(--height-top-header) var(--size-primary-avatar) 1fr;
   grid-template-areas:
     "leftsidebar topheader    topheader"
@@ -291,8 +292,8 @@ body {
 }
 
 .leftsidebar {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 3rem;
 }
 
 .leftsidebar > :nth-child(2) {
