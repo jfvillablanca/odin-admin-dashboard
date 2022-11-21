@@ -342,6 +342,11 @@ body {
   padding-left: var(--size-card-gap);
 }
 
+.projectcards > .cards {
+  /* min-height: calc(60vh - var(--height-top-header)); */
+  min-height: 60vh;
+}
+
 .card,
 .card-content {
   padding: 1.2rem;
@@ -349,6 +354,8 @@ body {
 
 .card {
   padding-top: 0;
+  min-height: min-content;
+  min-width: min-content;
 }
 
 .card-content > div {
@@ -401,6 +408,37 @@ body {
   color: rgb(var(--color-indigo-100));
 }
 
+.card {
+  position: relative;
+  /* height: 100%; */
+  /* width: 30rem; */
+}
+
+.card-content {
+  position: absolute;
+  inset: 3px;
+  z-index: 1;
+}
+
+.card:before {
+  background: linear-gradient(
+    45deg,
+    transparent 5%,
+    rgb(var(--color-yellow-400)) 50%,
+    transparent 99%
+    );
+
+  border-radius: inherit;
+  content: "";
+  inset: 0px;
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.card:hover:before {
+  opacity: 1;
+}
 
 /** Fonts **/
 
